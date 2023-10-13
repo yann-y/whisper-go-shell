@@ -45,6 +45,7 @@ func main() {
 	err := cmd.Run()
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
 	cmd = exec.Command("./whisper/main", []string{
 		"-f", audioPath,
